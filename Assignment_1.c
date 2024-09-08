@@ -23,3 +23,71 @@ double calculateDistance() {
     
     return distance;
 }
+// Function to calculate the perimeter (circumference) of the circle
+double calculatePerimeter() {
+    double diameter = calculateDistance();
+    double radius = diameter / 2.0;
+    double circumference = 2 * PI * radius;
+    
+    printf("The perimeter (circumference) of the circle is %.2f\n", circumference);
+    
+    // Ask for difficulty rating
+    double difficulty;
+    printf("Rate the difficulty of calculating the perimeter (1.0 - 5.0): ");
+    scanf("%lf", &difficulty);
+    
+    return difficulty;
+}
+
+// Function to calculate the area of the circle
+double calculateArea() {
+    double diameter = calculateDistance();
+    double radius = diameter / 2.0;
+    double area = PI * pow(radius, 2);
+    
+    printf("The area of the circle is %.2f\n", area);
+    
+    // Ask for difficulty rating
+    double difficulty;
+    printf("Rate the difficulty of calculating the area (1.0 - 5.0): ");
+    scanf("%lf", &difficulty);
+    
+    return difficulty;
+}
+
+// Function to calculate the width (diameter) of the circle
+double calculateWidth() {
+    double diameter = calculateDistance();
+    printf("The width (diameter) of the circle is %.2f\n", diameter);
+    
+    // Ask for difficulty rating
+    double difficulty;
+    printf("Rate the difficulty of calculating the width (1.0 - 5.0): ");
+    scanf("%lf", &difficulty);
+    
+    return difficulty;
+}
+
+// Function to calculate the height (diameter) of the circle
+double calculateHeight() {
+    double diameter = calculateDistance();
+    printf("The height (diameter) of the circle is %.2f\n", diameter);
+    
+    // Ask for difficulty rating
+    double difficulty;
+    printf("Rate the difficulty of calculating the height (1.0 - 5.0): ");
+    scanf("%lf", &difficulty);
+    
+    return difficulty;
+}
+
+// Main function
+int main(int argc, char **argv) {
+    calculateDistance();
+    calculatePerimeter();
+    calculateArea();
+    calculateWidth();
+    calculateHeight();
+    
+    return 0;
+}
